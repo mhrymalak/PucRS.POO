@@ -16,7 +16,7 @@ public class Cadastro
     public void incluir(Funcionario funcionario) {if (funcionario != null)lista.add(funcionario);}
     public boolean incluir(String codigo)
     {
-       if(lista.getCodigo(codigo) )
+    //   if(lista.getCodigo(codigo) )
         return true;
     }
     public String geraRelatorio()
