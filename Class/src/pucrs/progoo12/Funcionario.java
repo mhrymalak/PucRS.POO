@@ -18,8 +18,8 @@ public abstract class Funcionario
     public String getNome()         { return nome;     }
     public double getSalarioBruto() { return salario;  }
     public double getSalarioLiquido()
-    {   if(salario > 2500.00) return salario * 1.17;
-        return salario * 1.1;
+    {   if(salario > 2500.00) return salario * 0.83;
+        return salario * 0.9;
     }
 
     public String toString()
