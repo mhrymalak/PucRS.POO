@@ -19,4 +19,12 @@ public class Cadastro
        if(lista.getCodigo(codigo) )
         return true;
     }
+    public String geraRelatorio()
+    {   return "";
+
+    }
+    public boolean gravaArquivo()
+    {   return false;
+
+    }
 }
