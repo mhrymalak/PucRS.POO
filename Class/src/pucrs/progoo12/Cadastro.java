@@ -14,10 +14,17 @@ public class Cadastro
     public Cadastro() { lista = new ArrayList<>(); }
 
     public void incluir(Funcionario funcionario) {if (funcionario != null)lista.add(funcionario);}
-    public boolean incluir(String codigo)
-    {
-    //   if(lista.getCodigo(codigo) )
-        return true;
+    public boolean excluir(String codigo)
+    {   if(codigo == null)return false;
+        else
+        {   for (Funcionario f : lista)
+             {  if (f.getCodigo().equals(codigo))
+                {   if (lista.remove(f)) return true;
+                    else return false;
+                }
+             }
+        }
+        return false;
     }
     public String geraRelatorio()
     {   return "";

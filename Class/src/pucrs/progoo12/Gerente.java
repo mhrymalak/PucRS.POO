@@ -9,9 +9,9 @@ public class Gerente extends Funcionario
 
     public double getBonus() {return bonus; }
     public void setBonus(double bonus){ if(bonus > 0)this.bonus = bonus; }
-    @Override
-        public double getSalarioLiquido()
-        {
 
-        }
+    @Override  // Sobrescrita
+    public double getSalarioLiquido()
+    {   return super.getSalarioLiquido() + bonus;
+    }
 }

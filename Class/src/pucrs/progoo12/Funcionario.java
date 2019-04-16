@@ -22,11 +22,17 @@ public abstract class Funcionario
         return salario * 0.9;
     }
 
+    @Override // Sobrescrita
     public String toString()
-    {   StringBuilder string = new StringBuilder("Código: "+codigo);
-        string.append("\nNome: "+nome);
-        string.append("\nSalário: %.2f"+salario);
-        return string.toString();
+    { /*StringBuilder string = new StringBuilder("Código: ");
+        string.append(codigo);
+        string.append("\nNome: ");
+        string.append(nome);
+        string.append("\nSalário: %.2f");
+        string.append(salario);
+        return string.toString();*/
+
+        return String.format("Código: %s\nNome: %s\nSalário Bruto: %.2f", codigo, nome, salario);
     }
 
 }
