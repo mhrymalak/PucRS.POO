@@ -12,12 +12,14 @@ public class CadastroImoveis
 
         for (Imovel imovel:lista)
         {   string.append(imovel.toString());
-            string.append("\n");
+            string.append(" ");
             string.append(imovel.calculoImposto());
             string.append("\n");
         }
         return string.toString();
     }
+    public void add(Imovel imovel) {lista.add(imovel); }
+
     public String listar(String nome)
     {   StringBuilder string = new StringBuilder();
 

@@ -11,6 +11,6 @@ public class Geo
 
     @Override
     public String toString() {
-        return String.format("Longitude: %f |  Latitude: %f");
+        return String.format("Lon: %f |  Lat: %f", longitude, latitude);
     }
 }
